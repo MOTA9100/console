@@ -1,0 +1,24 @@
+{
+    "name": "mota/console",
+    "description": "mota laravel artisan commands",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "moslem tayari",
+            "email": "moslem_t@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mota\\Console\\ConsoleServiceProvider"
+            ],
+            "aliases": {
+                "MotaConsole": "Mota\\Console\\Facades\\Console"
+            }
+        }
+    }
+}
