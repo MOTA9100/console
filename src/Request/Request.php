@@ -39,6 +39,11 @@ class Request extends Command {
 
         foreach ($requestArray as $item) {
 
+            $requestsDir .= '/' . $item;
+
+            if (!is_dir($requestsDir))
+                $this->makeDir($requestsDir);
+
             $namespace .= "\\$item";
         }
 
